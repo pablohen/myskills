@@ -5,6 +5,7 @@ import {
   SafeAreaView,
   TextInput,
   FlatList,
+  StatusBar,
 } from 'react-native';
 import Button from '../components/Button';
 import SkillCard from '../components/SkillCard';
@@ -43,6 +44,11 @@ const Home = (props: Props) => {
 
   return (
     <SafeAreaView style={styles.container}>
+      <StatusBar
+        barStyle="light-content"
+        backgroundColor="transparent"
+        translucent
+      />
       <Text style={styles.title}>Welcome, Pablo Henrique</Text>
 
       <Text style={styles.greetings}>{greetings}</Text>
@@ -84,6 +90,7 @@ const styles = StyleSheet.create({
     color: '#ffffff',
     fontSize: 24,
     fontWeight: 'bold',
+    marginTop: 40,
   },
   input: {
     backgroundColor: '#1f1e25',
