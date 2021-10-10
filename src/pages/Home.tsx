@@ -101,6 +101,6 @@ const styles = StyleSheet.create({
     borderRadius: 7,
   },
   greetings: {
-    color: '#ffffff',
+    color: '#ffffffcc',
   },
 });
